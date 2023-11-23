@@ -6,12 +6,13 @@ import java.util.List;
 
 
 public class Configurations {
+    public static final int probabilityOfRandomTree = 25;
     public static final int minNInFile = 0;
     public static final int maxNInFile = 5;
-    public static final int maxRows = 250;
-    public static final int maxCols = 250;
-    public static final int minRows = 230;
-    public static final int minCols = 230;
+    public static final int maxRows = 50;
+    public static final int maxCols = 50;
+    public static final int minRows = 25;
+    public static final int minCols = 25;
     public static final int idexOfEarthImage = 0;
     public static final int idexOfGrassImage = 1;
     public static final int idexOfSandImage = 2;

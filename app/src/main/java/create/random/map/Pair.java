@@ -10,6 +10,10 @@ public class Pair {
 
     }
 
+    public static Pair of(int x, int y) {
+        return new Pair(x, y);
+    }
+
     public Pair() {
         this(0, 0);
     }
