@@ -21,10 +21,12 @@ public class Finestra {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                
                 generatore.generateMap();
                 frame.setSize((generatore.nCol+3) * Configurations.pixelForImage, (generatore.nRow+3) * Configurations.pixelForImage);
                 frame.setPreferredSize(frame.getSize());
                 frame.repaint();
+                
             }
         });
         frame.setSize((generatore.nCol+3) * Configurations.pixelForImage, (generatore.nRow+3) * Configurations.pixelForImage);
