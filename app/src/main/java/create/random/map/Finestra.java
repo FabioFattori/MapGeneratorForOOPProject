@@ -52,8 +52,8 @@ public class Finestra {
                 images.put(1,ImageIO.read(getClass().getResource("/images/grass.png")));    
                 images.put(2,ImageIO.read(getClass().getResource("/images/sand.png")));    
                 images.put(3,ImageIO.read(getClass().getResource("/images/tree.png")));    
-                images.put(4,ImageIO.read(getClass().getResource("/images/wall.png")));    
-                images.put(5,ImageIO.read(getClass().getResource("/images/water.png")));    
+                images.put(4,ImageIO.read(getClass().getResource("/images/water.png")));    
+                images.put(5,ImageIO.read(getClass().getResource("/images/wall.png")));    
             } catch (Exception e) {
                 throw e;
             }
@@ -66,7 +66,6 @@ public class Finestra {
             int[][] map = generatore.map;
             for (int i = 0; i < map.length; i++) {
                 for (int j = 0; j < map[i].length; j++) {
-                        g2.setColor(java.awt.Color.BLACK);
                         if (map[i][j] == 0) {
                             g2.drawImage(images.get(0), j * Configurations.pixelForImage, i * Configurations.pixelForImage,Configurations.pixelForImage,Configurations.pixelForImage,null);
                         } else if (map[i][j] == 1) {
@@ -79,6 +78,10 @@ public class Finestra {
                             g2.drawImage(images.get(4), j * Configurations.pixelForImage, i * Configurations.pixelForImage,Configurations.pixelForImage,Configurations.pixelForImage,null);
                         }else if (map[i][j] == 5) {
                             g2.drawImage(images.get(5), j * Configurations.pixelForImage, i * Configurations.pixelForImage,Configurations.pixelForImage,Configurations.pixelForImage,null);
+                        }else {
+                            System.out.println(map[i][j]);
+                            System.out.println("porcodio");
+                            
                         }
                 }
             }
